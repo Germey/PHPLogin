@@ -1,0 +1,10 @@
+<?php 
+	$ip = "192.168.122.5";
+	system("sudo ./bash/login.sh $ip", $status);
+	echo $status;
+	if ($status == 'true') {
+		echo "Success";
+	} else {
+		echo "Fail";
+	}
+?>
